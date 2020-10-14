@@ -14,3 +14,86 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+a,
+a:link {
+  color: red;
+
+  &:hover {
+    color: darken(red, 20%);
+  }
+}
+
+.otro-idioma {
+  font-style: italic;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.esconder {
+  display: none;
+}
+
+#menu {
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333030;
+
+  .boton-menu {
+    padding: 1em;
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &.actual {
+      border: 1px dotted;
+      color: darken(whitesmoke, 20%);
+    }
+
+    &:hover {
+      color: darken(whitesmoke, 20%);
+    }
+  }
+}
+
+#contenido {
+  width: 80vw;
+  margin-left: 20vw;
+  padding: 3em 10em;
+}
+
+.derecha {
+  text-align: right;
+}
+
+#programa {
+  line-height: 2;
+}
+
+.festivo {
+  font-style: italic;
+  color: lightgray;
+}
+
+.entrega {
+  font-weight: 600;
+  background-color: lightblue;
+}
